@@ -30,7 +30,17 @@ public class MainActivity extends AppCompatActivity {
                 .setOnMenuSelectedListener(new OnMenuSelectedListener() {
                     @Override
                     public void onMenuSelected(int index) {
-                        Toast.makeText(MainActivity.this,"You selected "+arrayName[index],Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this,"You selected "+arrayName[index],Toast.LENGTH_SHORT).show();
+                        switch(index){
+                            case 0: new FinestWebView.Builder(MainActivity.this).show("https://yourProfileUrl"); break;
+                           
+                            case 1: new FinestWebView.Builder(MainActivity.this).show("https://yourProfileUrl"); break;
+                                
+                            case 2: new FinestWebView.Builder(MainActivity.this).show("https://yourProfileUrl"); break;
+                                
+                            case 3: new FinestWebView.Builder(MainActivity.this).show("https://yourProfileUrl"); break;
+                                
+                            case 4: new FinestWebView.Builder(MainActivity.this).show("https://yourProfileUrl"); break;
                     }
                 });
     }
