@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
                                 
                             case 4: new FinestWebView.Builder(MainActivity.this).show("https://yourProfileUrl"); break;
                     }
+                    };
                 });
-    }
+    
+                
+     }
 
 }
